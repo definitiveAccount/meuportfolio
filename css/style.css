@@ -1,0 +1,121 @@
+/* RU do aluno: 3723091 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {    
+    margin: 0;
+    overflow: hidden;
+}
+
+.main-background {
+    display: flex;
+    height: 100vh;
+}
+
+.light-pink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffe9ec;
+    flex: 1 0 34%;
+    font-family: "Sofia", sans-serif;
+    padding: 1rem;
+}
+
+.light-pink h1 {
+    text-align: center;
+    z-index: 2000;
+}
+
+.pink {
+    background-color:  #FFB6C1;
+    flex: 2 0 66%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+
+nav {    
+    background-color: #ffe9ec;
+}
+
+nav a {
+    background-color: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover {
+    color: #808080;
+}
+
+nav ul li:hover {
+    background-color: #FFB6C1;
+}
+
+article {
+    display: none;
+}
+
+article.active {
+    display: block;
+}
+
+article h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+article p {
+    text-align: justify;
+}
+
+article#contato {
+    border-radius: 2%;
+    background-color: #ffe9ec;
+    min-width: 50%;
+    padding: 2rem;
+}
+
+article form * {
+    margin-bottom: 2rem;
+}
+
+input {
+    display: block;
+    background-color: #FFB6C1;
+    border: none;
+    border-radius: 3%;
+    width: 100%;
+}
+
+textarea {
+    border: none;
+    background-color: #FFB6C1;
+    border-radius: 3%;
+    width: 100%;
+}
+
+form button {
+    border: none;
+    background-color: #FFB6C1;
+    width: 100%;
+    border-radius: 3%;
+}
+
+@media(max-width: 790px) {
+    body {
+        overflow-y: scroll;
+    }
+
+    .main-background {
+            flex-direction: column;
+    }
+
+    .pink {
+            padding: 1rem;
+    }
+}
